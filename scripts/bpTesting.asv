@@ -2,7 +2,7 @@
 %determine frequency, amplitude, and mean (report all as mean \pm std)
 % e.g. IIIA5mV.lvm
 
-[frequency, amplitude, mean] = inChar('../data/IIIA5V.lvm')
+[frequency, amplitude, mean] = inChar('../data/IIIA500mV.lvm')
 
 
 function [freq, A, mu] = inChar(filename)
@@ -25,13 +25,13 @@ function [freq, A, mu] = inChar(filename)
     plot(t(t>0.5& t<0.6),x(t>0.5 & t<0.6), 'LineWidth',2)
     xlabel('Time (s)')
     ylabel('Amplitude (V)')
-    title('5V Square Wave, 50Hz')
+    title('500mV Square Wave, 50Hz')
 
     figure(2)                   %plotting amplitdue spectral density
     plot(f,X)
     xlabel('Frequency (Hz)')
     ylabel('Amplitude (V)')
-    title('5V Square Wave, 50Hz, ASD')
+    title('50mV Square Wave, 50Hz, ASD')
 
     [~, maxIndex] = max(X(1:round(N/2)));   %Find index of primary frequency
     freq = f(maxIndex);                     %Find primary frequency
