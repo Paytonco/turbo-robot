@@ -2,9 +2,12 @@
 %determine frequency, amplitude, and mean (report all as mean \pm std)
 % e.g. IIIA5mV.lvm
 
-[frequency, amplitude, mean] = inChar('../data/IIIA5V.lvm')
+[frequency, amplitude, mean] = inChar('../data/IIIA5V.lvm') %input name of file of interest
 
 
+%freq is principal frequency, A is a tuple with [mean amplitude, std
+%amplitude] and mu is the midline value. frequency in Hz, amplitude +
+%midline in V. 
 function [freq, A, mu] = inChar(filename)
     bpArray = load(filename);   %load .lvm recorded by LabVIEW
     x = bpArray(:,1);           %input (blood pressure) vector
