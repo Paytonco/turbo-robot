@@ -1,4 +1,4 @@
-%% Finding delay and confirming 5mV resolution
+%% Finding delay and confirming 5mV resolution  OUTPUT TESTING
 %Find delay as argmax xcov, take delayed difference, form CI
 % e.g. IIIAZ5mV.lvm
 clear;clc;

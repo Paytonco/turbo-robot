@@ -1,4 +1,4 @@
-%% Determining qualities of input signal
+%% Determining qualities of input signal    BP TESTING
 %determine frequency, amplitude, and mean (report all as mean \pm std)
 % e.g. IIIA5mV.lvm
 

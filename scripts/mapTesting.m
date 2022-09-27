@@ -1,4 +1,4 @@
-%% Checking that filter did what we intended + Characterizing the Transfer Function
+%% Checking that filter did what we intended + Characterizing the Transfer Function MAP TESTING
 %Reproduce results in MATLAB
 % e.g. IIIA10.lvm
 
